@@ -4,7 +4,7 @@ webpackJsonp([2],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PagePushedPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PresentPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -19,38 +19,35 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the PagePushedPage page.
+ * Generated class for the PresentPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var PagePushedPage = (function () {
-    function PagePushedPage(navCtrl, navParams) {
+var PresentPage = (function () {
+    function PresentPage(navCtrl, navParams, viewCtrl) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.callback = this.navParams.get("callback");
+        this.viewCtrl = viewCtrl;
     }
-    PagePushedPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad PagePushedPage');
+    PresentPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad PresentPage');
     };
-    PagePushedPage.prototype.goBack = function () {
-        var _this = this;
-        var param = '我是来自Push的值';
-        this.callback(param).then(function () {
-            _this.navCtrl.pop();
-        });
+    PresentPage.prototype.goback = function () {
+        this.viewCtrl.dismiss("我是来自Present的值");
     };
-    PagePushedPage = __decorate([
+    PresentPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-page-pushed',template:/*ion-inline-start:"/Users/cc/Desktop/ionic/demoBlank/src/pages/page-pushed/page-pushed.html"*/`<!--\n  Generated template for the PagePushedPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar hideBackButton="true">\n\n      <ion-buttons left>\n\n      <button ion-button icon-only (click)="goBack()">\n\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>pagePushed</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n`/*ion-inline-end:"/Users/cc/Desktop/ionic/demoBlank/src/pages/page-pushed/page-pushed.html"*/,
+            selector: 'page-present',template:/*ion-inline-start:"/Users/cc/Desktop/ionic/可运行/demoBlank/src/pages/present/present.html"*/`<!--\n  Generated template for the PresentPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>present</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <button ion-button color="secondary" (click)="goback()">把值传回Home</button>\n</ion-content>\n`/*ion-inline-end:"/Users/cc/Desktop/ionic/可运行/demoBlank/src/pages/present/present.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
-    ], PagePushedPage);
-    return PagePushedPage;
-    var _a, _b;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */]])
+    ], PresentPage);
+    return PresentPage;
 }());
 
-//# sourceMappingURL=page-pushed.js.map
+//# sourceMappingURL=present.js.map
 
 /***/ }),
 
@@ -76,11 +73,11 @@ webpackEmptyAsyncContext.id = 111;
 
 var map = {
 	"../pages/page-pushed/page-pushed.module": [
-		277,
+		276,
 		1
 	],
 	"../pages/present/present.module": [
-		276,
+		277,
 		0
 	]
 };
@@ -129,7 +126,7 @@ var TabsPage = (function () {
         this.tab3Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPage */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/cc/Desktop/ionic/demoBlank/src/pages/tabs/tabs.html"*/`<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n`/*ion-inline-end:"/Users/cc/Desktop/ionic/demoBlank/src/pages/tabs/tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/cc/Desktop/ionic/可运行/demoBlank/src/pages/tabs/tabs.html"*/`<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n`/*ion-inline-end:"/Users/cc/Desktop/ionic/可运行/demoBlank/src/pages/tabs/tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -164,7 +161,7 @@ var AboutPage = (function () {
     }
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-about',template:/*ion-inline-start:"/Users/cc/Desktop/ionic/demoBlank/src/pages/about/about.html"*/`<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n`/*ion-inline-end:"/Users/cc/Desktop/ionic/demoBlank/src/pages/about/about.html"*/
+            selector: 'page-about',template:/*ion-inline-start:"/Users/cc/Desktop/ionic/可运行/demoBlank/src/pages/about/about.html"*/`<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n`/*ion-inline-end:"/Users/cc/Desktop/ionic/可运行/demoBlank/src/pages/about/about.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
     ], AboutPage);
@@ -199,7 +196,7 @@ var ContactPage = (function () {
     }
     ContactPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-contact',template:/*ion-inline-start:"/Users/cc/Desktop/ionic/demoBlank/src/pages/contact/contact.html"*/`<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-start></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n`/*ion-inline-end:"/Users/cc/Desktop/ionic/demoBlank/src/pages/contact/contact.html"*/
+            selector: 'page-contact',template:/*ion-inline-start:"/Users/cc/Desktop/ionic/可运行/demoBlank/src/pages/contact/contact.html"*/`<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-start></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n`/*ion-inline-end:"/Users/cc/Desktop/ionic/可运行/demoBlank/src/pages/contact/contact.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
     ], ContactPage);
@@ -217,8 +214,8 @@ var ContactPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__page_pushed_page_pushed__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__present_present__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__page_pushed_page_pushed__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__present_present__ = __webpack_require__(100);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -234,15 +231,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var HomePage = (function () {
     function HomePage(navCtrl, modalCtrl) {
+        var _this = this;
         this.navCtrl = navCtrl;
         this.modalCtrl = modalCtrl;
         this.myCallbackFunction = function (params) {
-            var _this = this;
             return new Promise(function (resolve, reject) {
                 if (typeof (params) != 'undefined') {
                     resolve('ok');
                     _this.param = params;
                     console.log('回调1: ' + params);
+                    _this.printClick(params);
                 }
                 else {
                     reject(Error('error'));
@@ -255,6 +253,9 @@ var HomePage = (function () {
             callback: this.myCallbackFunction
         });
     };
+    HomePage.prototype.printClick = function (param) {
+        console.log('把回调的值取出来:' + this.param);
+    };
     HomePage.prototype.presentClick = function () {
         var presentPageModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__present_present__["a" /* PresentPage */]);
         presentPageModal.onDidDismiss(function (data) {
@@ -264,7 +265,7 @@ var HomePage = (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/cc/Desktop/ionic/demoBlank/src/pages/home/home.html"*/`<ion-header>\n  <ion-navbar>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <button ion-button color="dark" (click)="pushClick()" >push出下个页面 </button>\n <button ion-button color="dark" (click)="presentClick()" >present出下个页面 </button>\n\n</ion-content>\n`/*ion-inline-end:"/Users/cc/Desktop/ionic/demoBlank/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/cc/Desktop/ionic/可运行/demoBlank/src/pages/home/home.html"*/`<ion-header>\n  <ion-navbar>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <button ion-button color="dark" (click)="pushClick()" >push出下个页面 </button>\n <button ion-button color="dark" (click)="presentClick()" >present出下个页面 </button>\n <button ion-button color="dark" (click)="printClick()" >打印回调值 </button>\n</ion-content>\n`/*ion-inline-end:"/Users/cc/Desktop/ionic/可运行/demoBlank/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */]) === "function" && _b || Object])
     ], HomePage);
@@ -302,8 +303,8 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_about_about__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_page_pushed_page_pushed__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_present_present__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_page_pushed_page_pushed__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_present_present__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_status_bar__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_splash_screen__ = __webpack_require__(195);
@@ -343,8 +344,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/present/present.module#PresentPageModule', name: 'PresentPage', segment: 'present', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/page-pushed/page-pushed.module#PagePushedPageModule', name: 'PagePushedPage', segment: 'page-pushed', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/page-pushed/page-pushed.module#PagePushedPageModule', name: 'PagePushedPage', segment: 'page-pushed', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/present/present.module#PresentPageModule', name: 'PresentPage', segment: 'present', priority: 'low', defaultHistory: [] }
                     ]
                 })
             ],
@@ -407,7 +408,7 @@ var MyApp = (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/cc/Desktop/ionic/demoBlank/src/app/app.html"*/`<ion-nav [root]="rootPage"></ion-nav>\n`/*ion-inline-end:"/Users/cc/Desktop/ionic/demoBlank/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/cc/Desktop/ionic/可运行/demoBlank/src/app/app.html"*/`<ion-nav [root]="rootPage"></ion-nav>\n`/*ion-inline-end:"/Users/cc/Desktop/ionic/可运行/demoBlank/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
@@ -422,7 +423,7 @@ var MyApp = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PresentPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PagePushedPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -437,34 +438,38 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the PresentPage page.
+ * Generated class for the PagePushedPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var PresentPage = (function () {
-    function PresentPage(navCtrl, navParams, viewCtrl) {
+var PagePushedPage = (function () {
+    function PagePushedPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.viewCtrl = viewCtrl;
+        this.callback = this.navParams.get("callback");
     }
-    PresentPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad PresentPage');
+    PagePushedPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad PagePushedPage');
     };
-    PresentPage.prototype.goback = function () {
-        this.viewCtrl.dismiss("我是来自Present的值");
+    PagePushedPage.prototype.goBack = function () {
+        var _this = this;
+        var param = '我是来自Push的值';
+        this.callback(param).then(function () {
+            _this.navCtrl.pop();
+        });
     };
-    PresentPage = __decorate([
+    PagePushedPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-present',template:/*ion-inline-start:"/Users/cc/Desktop/ionic/demoBlank/src/pages/present/present.html"*/`<!--\n  Generated template for the PresentPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>present</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <button ion-button color="secondary" (click)="goback()">把值传回Home</button>\n</ion-content>\n`/*ion-inline-end:"/Users/cc/Desktop/ionic/demoBlank/src/pages/present/present.html"*/,
+            selector: 'page-page-pushed',template:/*ion-inline-start:"/Users/cc/Desktop/ionic/可运行/demoBlank/src/pages/page-pushed/page-pushed.html"*/`<!--\n  Generated template for the PagePushedPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar hideBackButton="true">\n\n      <ion-buttons left>\n\n      <button ion-button icon-only (click)="goBack()">\n\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>pagePushed</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n`/*ion-inline-end:"/Users/cc/Desktop/ionic/可运行/demoBlank/src/pages/page-pushed/page-pushed.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */]) === "function" && _c || Object])
-    ], PresentPage);
-    return PresentPage;
-    var _a, _b, _c;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    ], PagePushedPage);
+    return PagePushedPage;
 }());
 
-//# sourceMappingURL=present.js.map
+//# sourceMappingURL=page-pushed.js.map
 
 /***/ })
 

@@ -8,14 +8,18 @@ import { PresentPage}from '../present/present'
 })
 export class HomePage {
    // 用于pop 回调的 block
+  
    param 
-   myCallbackFunction = function(params) {
+   myCallbackFunction =(params) =>{
      return new Promise((resolve, reject) => {
-
+       
+       
       if(typeof(params)!='undefined'){
           resolve('ok');
+
           this.param = params
           console.log('回调1: '+ params);
+          this.printClick(params)
       }else{
 
           reject(Error('error'))
@@ -32,6 +36,12 @@ export class HomePage {
    this.navCtrl.push(PagePushedPage, {
     callback: this.myCallbackFunction
 })
+
+  }
+
+  printClick(param){
+
+   console.log('把回调的值取出来:'+this.param)
 
   }
   presentClick(){
