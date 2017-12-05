@@ -108,7 +108,7 @@ goback(){
     this.viewCtrl.dismiss("我是来自Present的值")
   }
 ```
-#####present方法完毕! over!
+#####  present方法完毕! over!
 ```javascript
 注意:本人作为一名原iOS开发者,想从第一语言的角度给大家一些建议
 * 1. 在原生里面页面的跳转方式有2种  push , present,返回也有2种方式:pop,dismiss,他们是一一对应的,即: push->pop,present->dismiss,这点大家一定要清楚
@@ -122,11 +122,11 @@ goback(){
 
 demo可以在这里[下载](https://github.com/congder/callback)
 
-#####如果我写的文章正好解决了你此时此刻遇到的某个小问题,那么请点个赞吧^^!
+##### 如果我写的文章正好解决了你此时此刻遇到的某个小问题,那么请点个star吧^^!
 
 
  *本人作为一个 ionic 初学者,很多js ,anjular ,cordova ,es6 相关的知识有所欠缺,故很多东西仅停留在会用的层面上,如有不足之处,欢迎大家批评指正,谢谢 !*
-[其他关于ionic开发的更多文章请点击:](http://www.jianshu.com/u/d5c9932157ae)
+[其他关于ionic开发的更多文章请点击这里](http://www.jianshu.com/u/d5c9932157ae)
 
 
 
