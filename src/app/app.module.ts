@@ -8,8 +8,9 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { PagePushedPage } from '../pages/page-pushed/page-pushed';
 import { PresentPage}from '../pages/present/present'
+import { Push2Page} from '../pages/push2/push2'
 import { TabsPage } from '../pages/tabs/tabs';
-
+import { Http, Headers } from "@angular/http";
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -21,7 +22,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     TabsPage,
     PagePushedPage,
-    PresentPage
+    PresentPage,
+    Push2Page
   ],
   imports: [
     BrowserModule,
@@ -35,12 +37,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     TabsPage,
     PresentPage,
-    PagePushedPage
+    PagePushedPage,
+    Push2Page
 
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Http,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
