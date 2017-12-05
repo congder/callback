@@ -126,6 +126,8 @@ demo可以在这里[下载](https://github.com/congder/callback)
 
 
  *本人作为一个 ionic 初学者,很多js ,anjular ,cordova ,es6 相关的知识有所欠缺,故很多东西仅停留在会用的层面上,如有不足之处,欢迎大家批评指正,谢谢 !*
+
+
 [其他关于ionic开发的更多文章请点击这里](http://www.jianshu.com/u/d5c9932157ae)
 
 
